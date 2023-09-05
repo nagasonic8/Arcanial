@@ -1,0 +1,65 @@
+name: Arcanial
+version: '1.0-SNAPSHOT'
+main: arcanial.arcanial.Arcanial
+api-version: 1.19
+commands:
+  fly:
+    description: Toggles flying for the command sender.
+    usage: /fly
+    permission: fly
+    permission-message: You do not have permission to do this.
+  kit:
+    description: Gives the player the starting kit.
+    usage: /kit
+  openscoreboard:
+    description: Opens the scoreboard.
+  wetzombie:
+    description: Spawns a wet zombie.
+  bubblegear:
+    description: Gives the player all bubble gear.
+    usage: /bubblegear
+    permission: bubblegear
+  bubbleitems:
+    description: Gives the player all bubble items.
+    usage: /bubbleitems
+    permission: bubbleitems
+  frozenitems:
+    description: Gives the player all frozen items.
+    usage: /frozenitems
+    permission: frozenitems
+  owner:
+    description: Gives the player owner display name.
+    usage: /owner
+    permission: owner
+  rank:
+    description: Claims rank reward.
+    usage: /rank
+  giveitem:
+    description: Gives the player an item.
+    usage: /giveitem <item> <amount>
+    permission: is.owner
+  giverank:
+    description: Gives a player a rank.
+    usage: /giverank <rank> <player>
+    permission: is.owner
+  removerank:
+    description: Removes a player's rank.
+    usage: /removerank <player>
+    permission: is.owner
+  spawn:
+    description: Sends player to spawn.
+    usage: /spawn
+  warp:
+    description: Warps the player somewhere.
+    usage: /warp <destination>
+  createworld:
+    description: Creates a new world.
+    usage: /createworld <name> <type>
+  setflightspeed:
+    description: Sets the players flight speed.
+    usage: /setflightspeed <amount>
+    permission: is.staff
+  spawnwarper:
+    description: Spawns a warper villager.
+    usage: /spawnwarper <warper>
+    permission: is.staff
